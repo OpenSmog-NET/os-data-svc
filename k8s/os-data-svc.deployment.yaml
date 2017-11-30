@@ -1,0 +1,51 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: #{k8s.app}#
+  namespace: #{k8s.namespace}#
+spec:
+  replicas: 4
+  minReadySeconds: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 2
+      maxSurge: 2
+  template:
+    metadata:
+      labels:
+        app: #{k8s.app}#
+        stage: #{Environment.Name}#
+    spec:
+      imagePullSecrets:
+      - name: os-secret-registry
+      containers:
+      - name: #{k8s.app}#
+        image: opensmog.azurecr.io/#{k8s.app}#:#{Build.BuildId}#
+        imagePullPolicy: IfNotPresent
+        env:
+            - name: 'ASPNETCORE_ENVIRONMENT'
+              valueFrom:
+                configMapKeyRef:
+                    name: '#{k8s.namespace}#.shared.config-map'
+                    key: 'cluster.environment'
+            - name: 'Serilog__WriteTo__0__Args__token'
+              valueFrom:
+                secretKeyRef:
+                    name: 'os-smog-api.secrets'
+                    key: 'os-smog-api.logentriesToken'
+            - name: 'ConnectionStrings__AzureStorage'
+              valueFrom:
+                secretKeyRef:
+                    name: 'os-smog-api.secrets'
+                    key: 'os-smog-api.azureStorage'
+            - name: 'ConnectionStrings__AzureWebJobStorage'
+              valueFrom:
+                secretKeyRef:
+                    name: 'os-smog-api.secrets'
+                    key: 'os-smog-api.azureWebJobStorage'
+            - name: 'ConnectionStrings_Database'
+              valueFrom:
+                secretKeyRef:
+                    name: 'os-smog-api.secrets'
+                    key: 'os-smog-api.measurementsDb'

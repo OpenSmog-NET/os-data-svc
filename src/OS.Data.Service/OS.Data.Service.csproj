@@ -12,10 +12,16 @@
     <PackageReference Include="OS.Core.WebJobs" Version="0.0.1-pre-201711262" />
     <PackageReference Include="OS.Data" Version="0.0.1-pre-201711262" />
     <PackageReference Include="OS.Events" Version="0.0.1-pre-201711262" />
+    <PackageReference Include="Serilog.Enrichers.Context" Version="2.3.0" />
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />
+    <PackageReference Include="Serilog.Sinks.Logentries" Version="3.0.26" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Dockerfile">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
