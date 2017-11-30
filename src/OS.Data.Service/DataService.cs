@@ -54,6 +54,7 @@ namespace OS.Data.Service
             }
             catch (Exception ex)
             {
+                logger.LogError(0, ex, "Failed to execute the command : {@Command}", command);
             }
         }
 

@@ -6,29 +6,14 @@
 
 #load "build/settings.build.cake"
 
-const string SolutionFile = "OS.Smog.Api.sln";
+const string SolutionFile = "OS.Data.Service.sln";
 
 var packages = getProjectsDirs(new string[] {
 });
 
 var apps = getProjectsDirs(new string [] {
-    "OS.Smog.Api"
+    "OS.Data.Service"
 });
-
-var webJobs = new Dictionary<string, string>() {
-};
-
-var webJobHosts = new Dictionary<string, string>() {
-    { "OS.Smog.Job", "OS.Smog.Api" }
-};
-
-var includeFiles = new Dictionary<string, string[]>(){
-    {
-        "OS.Smog.Api", new[] {
-            "OS.Smog.Api.xml"
-        }
-    }
-};
 
 Task(Clean)
     .WithCriteria(DirectoryExists(ArtifactsDir))
@@ -83,14 +68,6 @@ Task(Publish)
 
     forEachPath(apps, getProjectName, (app) => {
         publishFiles(app, includeFiles);
-    });
-
-    forEachPath(webJobs.Keys, null, (job) => {
-        Information(job);
-        DotNetCorePublish($"./src/{job}", getDotNetCoreWebJobPublishSettings(
-            webJobHosts[job],
-            webJobs[job],
-            job));
     });
 }); // Publish
 

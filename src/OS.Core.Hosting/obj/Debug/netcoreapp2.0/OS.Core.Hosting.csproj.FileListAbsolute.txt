@@ -1,9 +1,0 @@
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\bin\Debug\netcoreapp2.0\OS.Core.Hosting.deps.json
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\bin\Debug\netcoreapp2.0\OS.Core.Hosting.dll
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\bin\Debug\netcoreapp2.0\OS.Core.Hosting.pdb
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\obj\Debug\netcoreapp2.0\OS.Core.Hosting.csproj.CoreCompileInputs.cache
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\obj\Debug\netcoreapp2.0\OS.Core.Hosting.AssemblyInfoInputs.cache
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\obj\Debug\netcoreapp2.0\OS.Core.Hosting.AssemblyInfo.cs
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\obj\Debug\netcoreapp2.0\OS.Core.Hosting.dll
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\obj\Debug\netcoreapp2.0\OS.Core.Hosting.pdb
-D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Hosting\obj\Debug\netcoreapp2.0\OS.Core.Hosting.csprojResolveAssemblyReference.cache
