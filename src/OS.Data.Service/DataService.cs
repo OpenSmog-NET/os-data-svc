@@ -61,7 +61,7 @@ namespace OS.Data.Service
         [NoAutomaticTrigger]
         public async Task RunAsync()
         {
-            logger.LogInformation("WebJob is starting");
+            logger.LogInformation("Service is starting");
 
             var token = new WebJobsShutdownWatcher().Token;
 
@@ -70,7 +70,7 @@ namespace OS.Data.Service
                 await Task.Delay(TimeSpan.FromSeconds(10), token);
             }
 
-            logger.LogInformation("WebJob is shutting down");
+            logger.LogInformation("Service is shutting down");
         }
     }
 }

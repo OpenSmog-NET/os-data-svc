@@ -18,10 +18,6 @@ namespace OS.Data.Service
             {
                 try
                 {
-                    //var jobHost = WebJobHostConfiguration.Configure(config, container,
-                    //    useTimers: false,
-                    //    useServiceBus: true);
-
                     var host = new WebJobServiceHost(ServiceCodeName);
                     host.Configure(builder => builder
                         .UseStartup<Startup>()
@@ -42,15 +38,6 @@ namespace OS.Data.Service
                     LoggingSubsystem.CloseAndFlush();
                 }
             }
-            //var configuration = Startup.ReadConfiguration();
-            //var container = Startup.ConfigureServices(configuration);
-
-            //var host = WebJobHostConfiguration.Configure(configuration, container,
-            //    useTimers: false,
-            //    useServiceBus: true);
-
-            //host.CallAsync(typeof(DataService).GetMethod("RunAsync"));
-            //host.RunAndBlock();
         }
     }
 }
