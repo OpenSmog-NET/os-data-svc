@@ -1,0 +1,11 @@
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\bin\Debug\netcoreapp2.0\OS.Core.Logging.deps.json
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\bin\Debug\netcoreapp2.0\OS.Core.Logging.dll
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\obj\Debug\netcoreapp2.0\OS.Core.Logging.csproj.CoreCompileInputs.cache
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\obj\Debug\netcoreapp2.0\OS.Core.Logging.AssemblyInfoInputs.cache
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\obj\Debug\netcoreapp2.0\OS.Core.Logging.AssemblyInfo.cs
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\obj\Debug\netcoreapp2.0\OS.Core.Logging.csprojResolveAssemblyReference.cache
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\bin\Debug\netcoreapp2.0\OS.Core.Hosting.dll
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\bin\Debug\netcoreapp2.0\OS.Core.Logging.pdb
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\bin\Debug\netcoreapp2.0\OS.Core.Hosting.pdb
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\obj\Debug\netcoreapp2.0\OS.Core.Logging.dll
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Core.Logging\obj\Debug\netcoreapp2.0\OS.Core.Logging.pdb

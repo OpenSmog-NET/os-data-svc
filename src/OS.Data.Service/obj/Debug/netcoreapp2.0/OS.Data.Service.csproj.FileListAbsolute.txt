@@ -1,0 +1,12 @@
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\bin\Debug\netcoreapp2.0\OS.Data.Service.deps.json
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\bin\Debug\netcoreapp2.0\OS.Data.Service.runtimeconfig.json
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\bin\Debug\netcoreapp2.0\OS.Data.Service.runtimeconfig.dev.json
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\bin\Debug\netcoreapp2.0\OS.Data.Service.dll
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\obj\Debug\netcoreapp2.0\OS.Data.Service.csprojResolveAssemblyReference.cache
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\obj\Debug\netcoreapp2.0\OS.Data.Service.csproj.CoreCompileInputs.cache
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\obj\Debug\netcoreapp2.0\OS.Data.Service.AssemblyInfoInputs.cache
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\obj\Debug\netcoreapp2.0\OS.Data.Service.AssemblyInfo.cs
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\bin\Debug\netcoreapp2.0\OS.Data.Service.pdb
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\obj\Debug\netcoreapp2.0\OS.Data.Service.dll
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\obj\Debug\netcoreapp2.0\OS.Data.Service.pdb
+D:\Checkout\OpenSmog.NET\os-data-svc\src\OS.Data.Service\bin\Debug\netcoreapp2.0\appSettings.json

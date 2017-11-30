@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OS.Data.Service": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
