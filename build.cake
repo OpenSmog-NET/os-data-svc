@@ -65,10 +65,6 @@ Task(Publish)
         Information(app);
         DotNetCorePublish(app, getDotNetCorePublishSettings(app));
     });
-
-    forEachPath(apps, getProjectName, (app) => {
-        publishFiles(app, includeFiles);
-    });
 }); // Publish
 
 RunTarget(@target);
