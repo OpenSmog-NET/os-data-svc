@@ -29,6 +29,10 @@ spec:
                 configMapKeyRef:
                     name: '#{k8s.namespace}#.shared.config-map'
                     key: 'cluster.environment'
+            - name: 'Serilog__WriteTo__0__Name'
+              value: LogEntries
+            - name: 'Serilog__WriteTo__0__Args__outputTemplate'
+              value: ''
             - name: 'Serilog__WriteTo__0__Args__token'
               valueFrom:
                 secretKeyRef:
