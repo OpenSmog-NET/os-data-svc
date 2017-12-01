@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OS.Data.Service", "src\OS.Data.Service\OS.Data.Service.csproj", "{A8DBBAB4-EF4F-4D14-AC8C-0AF2BC29078A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OS.Core.WebJobs", "src\OS.Core.WebJobs\OS.Core.WebJobs.csproj", "{641CD86E-3B93-4300-87B3-0C96C6A22B9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A8DBBAB4-EF4F-4D14-AC8C-0AF2BC29078A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8DBBAB4-EF4F-4D14-AC8C-0AF2BC29078A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8DBBAB4-EF4F-4D14-AC8C-0AF2BC29078A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641CD86E-3B93-4300-87B3-0C96C6A22B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641CD86E-3B93-4300-87B3-0C96C6A22B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641CD86E-3B93-4300-87B3-0C96C6A22B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641CD86E-3B93-4300-87B3-0C96C6A22B9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,7 +21,7 @@ namespace OS.Data.Service
             this.store = store;
         }
 
-        public async Task SaveMeasurements([QueueTrigger("measurements", Connection = "AzureStorage")] SaveMeasurementsCommand command)
+        public async Task SaveMeasurements([QueueTrigger("measurements")] SaveMeasurementsCommand command)
         {
             try
             {
