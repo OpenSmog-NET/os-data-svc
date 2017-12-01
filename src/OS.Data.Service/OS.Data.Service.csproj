@@ -9,15 +9,12 @@
     <PackageReference Include="Marten" Version="2.4.0" />
     <PackageReference Include="OS.Core.Hosting" Version="0.0.1-pre-201711262" />
     <PackageReference Include="OS.Core.Logging" Version="0.0.1-pre-201711262" />
+    <PackageReference Include="OS.Core.WebJobs" Version="0.0.1-pre-201711262" />
     <PackageReference Include="OS.Data" Version="0.0.1-pre-201711262" />
     <PackageReference Include="OS.Events" Version="0.0.1-pre-201711262" />
     <PackageReference Include="Serilog.Enrichers.Context" Version="2.3.0" />
     <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />
     <PackageReference Include="Serilog.Sinks.Logentries" Version="3.0.26" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\OS.Core.WebJobs\OS.Core.WebJobs.csproj" />
   </ItemGroup>
 
   <ItemGroup>
