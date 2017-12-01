@@ -39,7 +39,7 @@ spec:
                 secretKeyRef:
                     name: 'os-smog-api.secrets'
                     key: 'os-smog-api.azureStorage'
-            - name: 'ConnectionStrings__AzureWebJobsAzureWebJobsDashboard'
+            - name: 'ConnectionStrings__AzureWebJobsDashboard'
               valueFrom:
                 secretKeyRef:
                     name: 'os-smog-api.secrets'
