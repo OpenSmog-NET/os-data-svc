@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using OS.Core;
 using OS.Core.Logging;
 using OS.Core.WebJobs;
@@ -13,9 +14,17 @@ namespace OS.Data.Service
 
         private static void Main(string[] args)
         {
-            var config = ConfigProvider.Create(Directory.GetCurrentDirectory());
+            var config = ConfigProvider.Create(Directory.GetCurrentDirectory()) as IConfiguration;
             using (var loggerFactory = LoggingSubsystem.Configure(config, ServiceCodeName))
             {
+                var log = loggerFactory.CreateLogger(typeof(Program));
+                var section = config.GetSection("ConnectionStrings");
+                foreach (var kvp in section.AsEnumerable())
+                {
+                    log.LogInformation("{@connectionString}", kvp);
+                    log.LogInformation($"{kvp.Key} : {kvp.Value}");
+                }
+
                 try
                 {
                     var host = new WebJobServiceHost(ServiceCodeName);
