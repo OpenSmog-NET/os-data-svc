@@ -18,6 +18,7 @@ npm-debug.log.*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 .nuget
+.vs
 .vscode
 # Build results
 [Dd]ebug/
