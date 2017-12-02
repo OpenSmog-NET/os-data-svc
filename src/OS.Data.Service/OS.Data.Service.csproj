@@ -8,9 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Marten" Version="2.4.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
-    <PackageReference Include="OS.Core.Hosting" Version="0.0.1-pre-201712021" />
-    <PackageReference Include="OS.Core.Logging" Version="0.0.1-pre-201712021" />
-    <PackageReference Include="OS.Core.WebJobs" Version="0.0.1-pre-201712021" />
+    <PackageReference Include="OS.Core.Hosting" Version="0.0.1-pre-201712022" />
+    <PackageReference Include="OS.Core.Logging" Version="0.0.1-pre-201712022" />
+    <PackageReference Include="OS.Core.WebJobs" Version="0.0.1-pre-201712022" />
     <PackageReference Include="OS.Data" Version="0.0.1-pre-201711262" />
     <PackageReference Include="OS.Events" Version="0.0.1-pre-201711262" />
     <PackageReference Include="Serilog.Enrichers.Context" Version="2.3.0" />
