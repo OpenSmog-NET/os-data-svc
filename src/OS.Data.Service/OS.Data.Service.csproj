@@ -15,7 +15,7 @@
     <PackageReference Include="OS.Events" Version="0.0.1-pre-201711262" />
     <PackageReference Include="Serilog.Enrichers.Context" Version="2.3.0" />
     <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />
-    <PackageReference Include="Serilog.Sinks.Logentries" Version="3.0.26" />
+    <PackageReference Include="Serilog.Sinks.AzureAnalytics" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>

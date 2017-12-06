@@ -30,14 +30,19 @@ spec:
                     name: '#{k8s.namespace}#.shared.config-map'
                     key: 'cluster.environment'
             - name: 'Serilog__WriteTo__0__Name'
-              value: 'LogEntries'
-            - name: 'Serilog__WriteTo__0__Args__outputTemplate'
-              value: '{Timestamp:HH:mm} [{Application}] [{Stage}] [{Level}] {MachineName} {CorrelationId} {Message}{NewLine}{Exception}'
-            - name: 'Serilog__WriteTo__0__Args__token'
+              value: 'AzureLogAnalytics'
+            - name: 'Serilog__WriteTo__0__Args__logName'
+              value: 'OpenSmog'
+            - name: 'Serilog__WriteTo__0__Args__workspaceId'
               valueFrom:
-                secretKeyRef:
-                    name: 'os-smog-api.secrets'
-                    key: 'os-smog-api.logentriesToken'
+                configMapKeyRef:
+                    name: '#{k8s.namespace}#.shared.config-map'
+                    key: 'logAnalytics.workspaceId'
+            - name: 'Serilog__WriteTo__0__Args__authenticationId'
+              valueFrom:
+                configMapKeyRef:
+                    name: '#{k8s.namespace}#.shared.config-map'
+                    key: 'logAnalytics.authenticationId'
             - name: 'ConnectionStrings__AzureStorage'
               valueFrom:
                 secretKeyRef:
