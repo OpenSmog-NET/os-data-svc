@@ -14,15 +14,19 @@ namespace OS.Data.Service
     {
         private readonly ILogger<DataService> logger;
         private readonly IDocumentStore store;
+        private readonly TelemetryService telemetry;
 
-        public DataService(ILogger<DataService> logger, IDocumentStore store)
+        public DataService(ILogger<DataService> logger, IDocumentStore store, TelemetryService telemetry)
         {
             this.logger = logger;
             this.store = store;
+            this.telemetry = telemetry;
         }
 
         public async Task SaveMeasurements([QueueTrigger("measurements")] SaveMeasurementsCommand command)
         {
+            var arrivalTime = DateTime.UtcNow;
+
             try
             {
                 using (LogContext.PushProperty("CorrelationId", command.CorrelationId))
@@ -50,6 +54,8 @@ namespace OS.Data.Service
 
                     logger.LogInformation("{@DeviceId} Added {@Added} measurements. Skipped {@Skipped} measurements",
                         command.DeviceId, command.Measurements.Count() - notAdded, notAdded);
+
+                    telemetry.TrackCommand(command, arrivalTime);
                 }
             }
             catch (Exception ex)
